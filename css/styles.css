@@ -35,7 +35,6 @@ body {
 .boxHamburguesa {
     width: 300px;
     height: 300px;
-    margin: 3px;
 }
 
 @keyframes logoImgAnimation {
@@ -46,16 +45,6 @@ body {
     margin-bottom: 10px;
 }
 
-.containerCenter{
-    display: flex;
-    width: 100%;
-}
-
-.containerRigth{
-    display: flex;
-    width: 100%;
-    justify-content: end;
-}
 
 /* Estilos generales */
 /* *{
