@@ -28,12 +28,33 @@ body {
     animation-duration: 2s;
 }
 
+.divFooter {
+    margin-top: 50px;
+}
+
+.boxHamburguesa {
+    width: 300px;
+    height: 300px;
+    margin: 3px;
+}
+
 @keyframes logoImgAnimation {
     50% {transform: rotateY(180deg);}
 }
 
 .form-group{
     margin-bottom: 10px;
+}
+
+.containerCenter{
+    display: flex;
+    width: 100%;
+}
+
+.containerRigth{
+    display: flex;
+    width: 100%;
+    justify-content: end;
 }
 
 /* Estilos generales */
