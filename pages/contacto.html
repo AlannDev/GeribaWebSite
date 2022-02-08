@@ -17,7 +17,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-          <a class="navbar-brand logoBrand" href="index.html">
+          <a class="navbar-brand logoBrand" href="../index.html">
             <img src="../img/Geriba-logos_white2.png" class="img-responsive imgLogo" alt="..." height="70px">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#divNavbar" aria-controls="divNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-6 containerFormContacto">
               <h2 class="text-center">Formulario de Contacto</h2>
               <form action="#">
                   <div class="form-group">
@@ -79,8 +79,8 @@
                       <textarea class="form-control" name="mensaje" required placeholder="Deja aquí tu comentario..."></textarea> 
                   </div>
                   <div class="form-group pull-right">
-                    <input type="reset" value="borrar">
-                    <input type="submit" value="enviar">
+                    <input class="btn btn-secondary" type="reset" value="borrar">
+                    <input class="btn btn-primary" type="submit" value="enviar">
                 </div>
               </form>
             </div>
@@ -90,9 +90,15 @@
     <div class="container divFooter">
         <div class="row">
             <div class="navbar fixed-bottom navbar-dark bg-dark d-flex justify-content-center">
-                <footer>
-                  <div class="footer-copyright text-center text-light py-3">Copyright © 2022. Todos los derechos reservados</div>
-                </footer>
+              <footer>
+                <div class="footer-copyright text-center text-light py-3">
+                  <p>Copyright © 2022. Todos los derechos reservados
+                    <a href="https://www.facebook.com/"><img src="../img/facebook_logo_32.png" alt="facebook"></a>
+                    <a href="https://twitter.com/"><img src="../img/twitter_icon_32.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="../img/instagram_32.png" alt="facebook"></a>
+                  </p>
+                </div>
+              </footer>
             </div>
         </div>
     </div> 
