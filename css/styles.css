@@ -1,4 +1,62 @@
 /* Variables */
+/* mapas */
+/* mixin */
+/* header */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5px;
+  justify-items: center;
+  align-items: center; }
+  header img {
+    grid-column-start: 2; }
+
+nav ul {
+  list-style: none; }
+  nav ul li {
+    display: inline-block; }
+    nav ul li a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 16px;
+      text-decoration: none; }
+      nav ul li a:hover {
+        color: #F2C64D; }
+
+.imgLogo {
+  animation-name: logoImgAnimation;
+  animation-duration: 2s;
+  width: auto;
+  height: 110px; }
+  .imgLogo:hover {
+    filter: blur(0.8px) grayscale(20%); }
+
+.buttonSend {
+  width: 60px;
+  background-color: #aee4ae;
+  border: 1px solid black;
+  border-radius: 10%;
+  text-align: center; }
+
+.buttonReset {
+  width: 60px;
+  background-color: #ec8383;
+  border: 1px solid black;
+  border-radius: 10%;
+  text-align: center; }
+
+.pNosotros {
+  color: white;
+  font-size: large; }
+
+.pHamburguesa {
+  color: white;
+  font-size: large; }
+
+.pSucursal {
+  color: white;
+  font-size: large; }
+
 /* Estilos */
 body {
   background-color: #f5f7fa;
@@ -32,10 +90,6 @@ body {
   top: -40px;
   left: 19px; }
 
-.imgLogo {
-  animation-name: logoImgAnimation;
-  animation-duration: 2s; }
-
 .divFooter {
   margin-top: 50px; }
 
@@ -49,16 +103,6 @@ body {
   padding: 20px;
   align-items: center;
   opacity: 0.8; }
-
-.pNosotros {
-  color: white;
-  font-size: large; }
-
-.pHamburguesa {
-  color: white; }
-
-.pSucursal {
-  color: white; }
 
 @keyframes agitarCard {
   0% {

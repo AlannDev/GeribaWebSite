@@ -1,0 +1,7 @@
+.buttonSend {
+    @include botones(rgb(174, 228, 174));
+}
+
+.buttonReset {
+    @include botones(rgb(236, 131, 131));
+}

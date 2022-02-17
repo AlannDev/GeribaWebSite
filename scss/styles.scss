@@ -1,7 +1,13 @@
-/* Variables */
-$title-color: white;
-$background-color: #f5f7fa;
-$backgound-image: url("../img/fondoGeriba.jpg");
+@import "base/variables";
+@import "base/elements";
+@import "base/lists";
+@import "base/maps";
+@import "base/mixins";
+@import "components/header";
+@import "components/contactos";
+@import "components/nosotros";
+@import "components/productos";
+@import "components/sucursal";
 
 
 /* Estilos */
@@ -44,16 +50,11 @@ body {
     left: 19px;
  }
   
-.imgLogo {
-    animation-name: logoImgAnimation;
-    animation-duration: 2s;
-}
+
 
 .divFooter {
     margin-top: 50px;
 }
-
-
 
 .boxHamburguesa {
     width: 300px;
@@ -66,19 +67,6 @@ body {
     padding: 20px;
     align-items: center;
     opacity: 0.8;
-}
-
-.pNosotros {
-    color: white;
-    font-size: large;
-}
-
-.pHamburguesa {
-    color: white;
-}
-
-.pSucursal {
-    color: white;
 }
 
 @keyframes agitarCard {
