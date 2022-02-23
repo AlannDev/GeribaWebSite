@@ -2,3 +2,8 @@
     color: map-get($map: $textSpecial, $key: color-sp);
     font-size: map-get($map: $textSpecial, $key: size); 
 }
+
+.boxHamburguesa {
+    width: 300px;
+    height: 300px;
+}

@@ -1,7 +1,12 @@
 /* Variables */
+/* Responsive */
+/* Normal desktop :1200px. */
+/* Normal desktop :992px. */
+/* Tablet desktop :768px. */
+/* small mobile :320px. */
+/* Large Mobile :480px. */
 /* mapas */
 /* mixin */
-/* header */
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -17,11 +22,30 @@ nav ul {
     display: inline-block; }
     nav ul li a {
       color: #fff;
-      margin: 0 10px;
-      font-size: 16px;
-      text-decoration: none; }
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      display: inline-block;
+      padding: 15px 5px;
+      position: relative;
+      font-family: "Roboto";
+      font-weight: 400; }
       nav ul li a:hover {
         color: #F2C64D; }
+      nav ul li a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #F2C64D;
+        transition: width 0.35s ease 0s, left 0.35s ease 0s;
+        width: 0; }
+      nav ul li a:hover:after {
+        width: 100%;
+        left: 0; }
 
 .imgLogo {
   animation-name: logoImgAnimation;
@@ -31,40 +55,52 @@ nav ul {
   .imgLogo:hover {
     filter: blur(0.8px) grayscale(20%); }
 
-.buttonSend {
-  width: 60px;
-  background-color: #aee4ae;
-  border: 1px solid black;
-  border-radius: 10%;
+@keyframes logoImgAnimation {
+  50% {
+    transform: rotateY(180deg); } }
+
+footer {
+  background: #585858;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 20px;
+  color: #fff;
+  margin-top: 50px;
+  opacity: .7; }
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center; }
 
-.buttonReset {
-  width: 60px;
-  background-color: #ec8383;
-  border: 1px solid black;
-  border-radius: 10%;
+.socials {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .socials li {
+    margin: 0 10px; }
+  .socials a {
+    text-decoration: none;
+    color: #fff; }
+    .socials a i {
+      font-size: 1.5rem;
+      transition: color 0.4s ease; }
+    .socials a:hover i {
+      color: #F2C64D; }
+
+.footer-bottom {
+  background: #313131;
+  width: 100vw;
   text-align: center; }
-
-.pNosotros {
-  color: white;
-  font-size: large; }
-
-.pHamburguesa {
-  color: white;
-  font-size: large; }
-
-.pSucursal {
-  color: white;
-  font-size: large; }
-
-/* Estilos */
-body {
-  background-color: #f5f7fa;
-  background-image: url("../img/fondoGeriba.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover; }
-  body h1 {
-    color: white; }
+  .footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    margin-bottom: 0; }
 
 .card {
   opacity: 0.5; }
@@ -90,20 +126,6 @@ body {
   top: -40px;
   left: 19px; }
 
-.divFooter {
-  margin-top: 50px; }
-
-.boxHamburguesa {
-  width: 300px;
-  height: 300px; }
-
-.containerFormContacto {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  align-items: center;
-  opacity: 0.8; }
-
 @keyframes agitarCard {
   0% {
     transform: translate(1px, 1px) rotate(0deg); }
@@ -118,9 +140,58 @@ body {
   100% {
     transform: translate(1px, -2px) rotate(-1deg); } }
 
-@keyframes logoImgAnimation {
-  50% {
-    transform: rotateY(180deg); } }
+.buttonSend {
+  width: 60px;
+  background-color: #aee4ae;
+  border: 1px solid black;
+  border-radius: 10%;
+  text-align: center; }
+
+.buttonReset {
+  width: 60px;
+  background-color: #ec8383;
+  border: 1px solid black;
+  border-radius: 10%;
+  text-align: center; }
+
+.containerFormContacto {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  align-items: center;
+  opacity: 0.8; }
 
 .form-group {
   margin-bottom: 10px; }
+
+.pNosotros {
+  color: white;
+  font-size: large; }
+
+.pHamburguesa {
+  color: white;
+  font-size: large; }
+
+.boxHamburguesa {
+  width: 300px;
+  height: 300px; }
+
+.pSucursal {
+  color: white;
+  font-size: large; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f5f7fa;
+  background-image: url("../img/fondoGeriba.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; }
+  body h1 {
+    color: white; }
