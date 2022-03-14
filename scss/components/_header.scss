@@ -58,6 +58,12 @@ nav {
     }
 }
 
+.menu-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+}
+
 @keyframes logoImgAnimation {
     50% {transform: rotateY(180deg);}
 }

@@ -2,3 +2,7 @@
     color: map-get($map: $textSpecial, $key: color-sp);
     font-size: map-get($map: $textSpecial, $key: size); 
 }
+
+.containerNosotros {
+    margin-top: 40px;
+}

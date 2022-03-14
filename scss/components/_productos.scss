@@ -7,3 +7,21 @@
     width: 300px;
     height: 300px;
 }
+
+.testCard{
+    justify-content: center;
+}
+
+.cardBurger {
+    width: 300px;
+    margin-bottom: 20px;
+    justify-content: center;
+    border: solid rgb(46, 45, 45) 1px;
+    align-self: center;
+    align-content: center;
+}
+
+.cardContainer{
+    justify-content: center;
+    display: flex;
+}

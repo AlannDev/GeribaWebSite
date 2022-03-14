@@ -55,6 +55,11 @@ nav ul {
   .imgLogo:hover {
     filter: blur(0.8px) grayscale(20%); }
 
+.menu-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px; }
+
 @keyframes logoImgAnimation {
   50% {
     transform: rotateY(180deg); } }
@@ -102,9 +107,9 @@ footer {
     word-spacing: 2px;
     margin-bottom: 0; }
 
-.card {
+.card-index {
   opacity: 0.5; }
-  .card:hover {
+  .card-index:hover {
     opacity: 1;
     animation: agitarCard 0.4s; }
 
@@ -171,6 +176,9 @@ footer {
   color: white;
   font-size: large; }
 
+.containerNosotros {
+  margin-top: 40px; }
+
 .pHamburguesa {
   color: white;
   font-size: large; }
@@ -179,9 +187,27 @@ footer {
   width: 300px;
   height: 300px; }
 
+.testCard {
+  justify-content: center; }
+
+.cardBurger {
+  width: 300px;
+  margin-bottom: 20px;
+  justify-content: center;
+  border: solid #2e2d2d 1px;
+  align-self: center;
+  align-content: center; }
+
+.cardContainer {
+  justify-content: center;
+  display: flex; }
+
 .pSucursal {
   color: white;
   font-size: large; }
+
+.divMaps {
+  margin-top: 40px; }
 
 * {
   margin: 0;
